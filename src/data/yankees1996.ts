@@ -54,14 +54,6 @@ export interface PlayerDetail extends PlayerStatLine {
   saves?: number;
 }
 
-export interface KeyMoment {
-  id: string;
-  phase: string;
-  title: string;
-  summary: string;
-  highlightGame?: boolean;
-}
-
 export const team1996: TeamSeasonSummary = {
   year: 1996,
   wins: 92,
@@ -443,41 +435,6 @@ export const players: PlayerDetail[] = [
       "Shut-down ninth innings through playoffs",
     ],
     bio: "Texas-born closer who handled ninth-inning assignments before Rivera assumed full-time duties.",
-  },
-];
-
-export const keyMoments: KeyMoment[] = [
-  {
-    id: "ws-game-4",
-    phase: "World Series Game 4",
-    title: "Jim Leyritz ties it late",
-    summary:
-      "Trailing late in Atlanta, Leyritz's legendary home run shifted momentum back toward the Bronx.",
-    highlightGame: true,
-  },
-  {
-    id: "ws-game-6",
-    phase: "World Series Game 6",
-    title: "Charlie Hayes catches the final out",
-    summary:
-      "Foul pop sealed the Yankees' first championship since 1978 — baseball card moment at River Ave.",
-    highlightGame: true,
-  },
-  {
-    id: "alcs-jeter",
-    phase: "ALCS Game 1",
-    title: "Jeter opens with authority",
-    summary:
-      "Leadoff home run at Yankee Stadium announced October belonged to the rookie shortstop.",
-    highlightGame: false,
-  },
-  {
-    id: "alds-martinez",
-    phase: "ALDS vs Rangers",
-    title: "Martinez puts Texas away",
-    summary:
-      "Grand slam power showed what the new middle of the order could do under playoff lights.",
-    highlightGame: false,
   },
 ];
 

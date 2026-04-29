@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type NavId = "overview" | "roster" | "schedule" | "moments";
+export type NavId = "overview" | "roster" | "schedule";
 
 interface SidebarProps {
   active: NavId;
@@ -11,7 +11,6 @@ const items: { id: NavId; label: string }[] = [
   { id: "overview", label: "Team overview" },
   { id: "roster", label: "Leaders & roster" },
   { id: "schedule", label: "Game results" },
-  { id: "moments", label: "Key moments" },
 ];
 
 export function Sidebar({ active, onNavigate }: SidebarProps) {

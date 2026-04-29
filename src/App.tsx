@@ -3,7 +3,6 @@ import { Layout, Sidebar, type NavId } from "./components/Sidebar";
 import { TeamOverviewView } from "./views/TeamOverviewView";
 import { RosterView } from "./views/RosterView";
 import { ScheduleView } from "./views/ScheduleView";
-import { MomentsView } from "./views/MomentsView";
 
 export default function App() {
   const [nav, setNav] = useState<NavId>("overview");
@@ -18,9 +17,6 @@ export default function App() {
       break;
     case "schedule":
       content = <ScheduleView />;
-      break;
-    case "moments":
-      content = <MomentsView />;
       break;
     default:
       content = <TeamOverviewView />;
